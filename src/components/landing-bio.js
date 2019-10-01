@@ -120,7 +120,7 @@ const LandingBio = () => (
 						can be accessed by render() via this.props.
 					</Description>
 					<Description>
-						Checkout my blog posts here. 👉
+						Chec kout my blog posts here. 👉
 						<NavLink to="/blog">Blog</NavLink>
 					</Description>
 				</Container>
