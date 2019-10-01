@@ -44,6 +44,45 @@ const Description = styled.p`
 
 const Name = styled.span`color: #cbc3ff;`;
 
+const NavLink = styled(Link)`
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+
+    border: solid black 2px;
+    color: black;
+    fill: black;
+    background: white;
+    box-shadow: 4px 4px 0 black;
+    background-color: #cbc3ff;
+    
+    
+    transition: top 0.2s ease;
+    position: relative;
+    top: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0 4px;
+
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+
+    :hover {
+        background-color: black;
+        color: #cbc3ff;
+        box-shadow: 4px 4px 0 #cbc3ff;
+    }
+
+   
+`;
+
 const IndexPage = ({ data }) => {
 	return (
 		<Layout>
@@ -56,20 +95,22 @@ const IndexPage = ({ data }) => {
 				<hr style={{ borderTop: '1px solid #cbc3ff' }} />
 				{data.allMarkdownRemark.edges.map(({ node }) => (
 					<div key={node.id}>
-						<Link
+						<h2>{node.frontmatter.title} </h2>
+						<div>
+							<ArticleDate>{node.frontmatter.date}</ArticleDate>
+							<ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+						</div>
+						<p>{node.excerpt}</p>
+
+						<NavLink
 							to={node.frontmatter.path}
 							css={css`
 								text-decoration: none;
 								color: inherit;
 							`}
 						>
-							<MarkerHeader>{node.frontmatter.title} </MarkerHeader>
-							<div>
-								<ArticleDate>{node.frontmatter.date}</ArticleDate>
-								<ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
-							</div>
-							<p>{node.excerpt}</p>
-						</Link>
+							Read this post
+						</NavLink>
 					</div>
 				))}
 			</Content>
