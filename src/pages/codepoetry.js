@@ -14,7 +14,6 @@ const Content = styled.div`
 const NameHeader = styled.h1`
 	font-size: 3.5rem;
 	margin-bottom: 30px;
-	color: #cbc3ff;
 `;
 
 const Description = styled.p`
@@ -25,12 +24,16 @@ const Description = styled.p`
 	line-height: 2rem;
 `;
 
+const Name = styled.span`color: #cbc3ff;`;
+
 const CodePoetry = ({ data }) => {
 	return (
 		<Layout>
 			<SEO title="Blog" />
 			<Content>
-				<NameHeader>Code Poetry 🎨 </NameHeader>
+				<NameHeader>
+					Code <Name>Poetry</Name> 🎨{' '}
+				</NameHeader>
 				<Description>Here are some of the projects i have worked on and prowd of.</Description>
 				<hr style={{ borderTop: '1px solid #cbc3ff' }} />
 			</Content>

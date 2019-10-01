@@ -8,8 +8,8 @@ code {
 }
 
 @font-face {
-	font-family: jost-500;
-	src: url("../fonts/TrueType/Jost-500-Medium.ttf") format("truetype");
+	font-family: jost-300-italic;
+	src: url("../fonts/TrueType/Jost-300-LightItalic.ttf") format("truetype");
 }
 
 @font-face {
@@ -262,10 +262,11 @@ h2 {
 	padding-top: 0;
 	margin-bottom: 1.45rem;
 	color: inherit;
-	font-weight: bold;
+	/* font-weight: bold; */
 	text-rendering: optimizeLegibility;
 	font-size: 1.62671rem;
 	line-height: 1.1;
+	font-family: jost-300-italic;
 }
 h3 {
 	margin-left: 0;
