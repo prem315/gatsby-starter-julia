@@ -38,7 +38,7 @@ const Button = styled.button`
 	background: white;
 	box-shadow: 4px 4px 0 #cbc3ff;
 	height: 40px;
-	border-radius: 5px;
+
 	transition: top 0.2s ease;
 	position: relative;
 	top: 0;

@@ -49,7 +49,7 @@ const NavLink = styled(Link)`
     box-shadow: 4px 4px 0 black;
     background-color: #cbc3ff;
     
-    border-radius: 5px;
+    
     transition: top 0.2s ease;
     position: relative;
     top: 0;
