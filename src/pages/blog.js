@@ -9,7 +9,6 @@ import SEO from '../components/seo';
 const Content = styled.div`
 	margin: 0 auto;
 	max-width: 860px;
-	padding: 1.45rem 1.0875rem;
 `;
 
 const ArticleDate = styled.h5`
@@ -30,12 +29,28 @@ const ReadingTime = styled.h5`
 	margin-bottom: 10px;
 `;
 
+const NameHeader = styled.h1`
+	font-size: 3.5rem;
+	margin-bottom: 30px;
+	color: #cbc3ff;
+`;
+
+const Description = styled.p`
+	padding: 0;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	margin-bottom: 20px;
+	line-height: 2rem;
+`;
+
 const IndexPage = ({ data }) => {
 	return (
 		<Layout>
 			<SEO title="Blog" />
 			<Content>
-				<h1>Blog</h1>
+				<NameHeader>Blog 📖 </NameHeader>
+				<Description>Here are some of the blog posts i have written.</Description>
+				<hr style={{ borderTop: '1px solid #cbc3ff' }} />
 				{data.allMarkdownRemark.edges.map(({ node }) => (
 					<div key={node.id}>
 						<Link

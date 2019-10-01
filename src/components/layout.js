@@ -43,11 +43,11 @@ const Layout = ({ children }) => (
 				<Header siteTitle={data.site.siteMetadata.title} />
 				<Content>
 					<main>{children}</main>
-					<Footer>
+					{/* <Footer>
 						© {new Date().getFullYear()}, Built with
 						{` `}
 						<GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
-					</Footer>
+					</Footer> */}
 				</Content>
 			</React.Fragment>
 		)}

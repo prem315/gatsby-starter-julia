@@ -152,7 +152,16 @@ const Header = ({ siteTitle }) => (
 				>
 					Projects
 				</NavLink>
-				<NavLink href="https://github.com/prem315">GitHub</NavLink>
+				<NavLink
+					to="/codepoetry"
+					activeStyle={{
+						backgroundColor: 'black',
+						color: '#cbc3ff',
+						boxShadow: '4px 4px 0 #cbc3ff'
+					}}
+				>
+					codepoetry
+				</NavLink>
 			</p>
 		</Content>
 	</SiteHeader>

@@ -25,12 +25,12 @@ const Description = styled.p`
 	line-height: 2rem;
 `;
 
-const Projects = ({ data }) => {
+const CodePoetry = ({ data }) => {
 	return (
 		<Layout>
 			<SEO title="Blog" />
 			<Content>
-				<NameHeader>Projects 👇 </NameHeader>
+				<NameHeader>Code Poetry 🎨 </NameHeader>
 				<Description>Here are some of the projects i have worked on and prowd of.</Description>
 				<hr style={{ borderTop: '1px solid #cbc3ff' }} />
 			</Content>
@@ -38,4 +38,4 @@ const Projects = ({ data }) => {
 	);
 };
 
-export default Projects;
+export default CodePoetry;
