@@ -24,7 +24,13 @@ const GatsbyLink = styled.a`margin-left: 5px;`;
 
 const Footer = styled.footer`
 	display: flex;
-	justify-content: center;
+	margin-top: 50px;
+	// justify-content: center;
+`;
+
+const HR = styled.hr`
+	border-top: 1px solid #cbc3ff;
+	margin-top: 40px;
 `;
 
 const Layout = ({ children }) => (
@@ -43,11 +49,13 @@ const Layout = ({ children }) => (
 				<Header siteTitle={data.site.siteMetadata.title} />
 				<Content>
 					<main>{children}</main>
-					{/* <Footer>
-						© {new Date().getFullYear()}, Built with
+					<Footer>
+						<h4>© {new Date().getFullYear()}, Built with</h4>
 						{` `}
-						<GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
-					</Footer> */}
+						<GatsbyLink href="https://www.gatsbyjs.org">
+							<h4>Gatsby</h4>
+						</GatsbyLink>
+					</Footer>
 				</Content>
 			</React.Fragment>
 		)}

@@ -4,6 +4,7 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
+import poem1 from '../images/poem1.png';
 
 const Content = styled.div`
 	margin: 0 auto;
@@ -26,6 +27,11 @@ const Description = styled.p`
 
 const Name = styled.span`color: #cbc3ff;`;
 
+const IMG = styled.img`
+	width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+`;
+
 const CodePoetry = ({ data }) => {
 	return (
 		<Layout>
@@ -36,6 +42,8 @@ const CodePoetry = ({ data }) => {
 				</NameHeader>
 				<Description>Here are some of the projects i have worked on and prowd of.</Description>
 				<hr style={{ borderTop: '1px solid #cbc3ff' }} />
+				<h2>Code Poem 1</h2>
+				<IMG src={poem1} />
 			</Content>
 		</Layout>
 	);
