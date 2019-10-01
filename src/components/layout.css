@@ -7,8 +7,14 @@ code {
 	src: url("../fonts/TrueType/Jost-300-Light.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: jost-500;
+	src: url("../fonts/TrueType/Jost-500-Medium.ttf") format("truetype");
+}
+
 body {
 	margin: 0;
+	padding-left: 12.5%;
 	/* font-family: 'Nunito', 'Avenir', 'Helvetica', 'sans-serif'; */
 	font-family: jost;
 	-webkit-font-smoothing: antialiased;

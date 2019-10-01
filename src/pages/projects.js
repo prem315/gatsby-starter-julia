@@ -15,8 +15,9 @@ const Projects = ({ data }) => {
 	return (
 		<Layout>
 			<SEO title="Blog" />
-			<h1>Projects</h1>
-			<Content />
+			<Content>
+				<h1>Projects</h1>
+			</Content>
 		</Layout>
 	);
 };

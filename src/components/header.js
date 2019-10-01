@@ -63,13 +63,17 @@ const GitHubLink = styled.a`
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
+  background-color: #CBC3FF;
+  padding: 7px 5px 5px;
+  font-family: jost-500
 `;
 
 const SiteHeader = styled.header`
 	background: transparent;
 	display: flex;
-	align-content: center;
-	justify-content: center;
+
+	// align-content: center;
+	// justify-content: center;
 `;
 
 const Header = ({ siteTitle }) => (
