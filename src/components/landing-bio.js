@@ -56,7 +56,41 @@ const Button = styled.button`
 `;
 
 const NavLink = styled(Link)`
-    padding: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+
+    border: solid black 2px;
+    color: black;
+    fill: black;
+    background: white;
+    box-shadow: 4px 4px 0 black;
+    background-color: #cbc3ff;
+    
+    border-radius: 5px;
+    transition: top 0.2s ease;
+    position: relative;
+    top: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0 4px;
+
+    
+    padding-left: 10px;
+    padding-right: 10px;
+
+    :hover {
+        background-color: black;
+        color: #cbc3ff;
+        box-shadow: 4px 4px 0 #cbc3ff;
+    }
+
+   
 `;
 
 const LandingBio = () => (
@@ -87,9 +121,7 @@ const LandingBio = () => (
 					</Description>
 					<Description>
 						Checkout my blog posts here.
-						<Button>
-							<NavLink to="/blog">Blog</NavLink>
-						</Button>
+						<NavLink to="/blog">Blog</NavLink>
 					</Description>
 				</Container>
 			</OuterContainer>
