@@ -110,6 +110,7 @@ const HomeLink = styled(NavLink)`
 const SiteHeader = styled.header`
 	background: transparent;
 	display: flex;
+	margin-top: 50px;
 
 	// align-content: center;
 	// justify-content: center;
