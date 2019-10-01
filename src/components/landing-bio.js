@@ -108,7 +108,7 @@ const LandingBio = () => (
 			<OuterContainer>
 				<Container>
 					<NameHeader>
-						Hi, I'm <Name>{data.site.siteMetadata.title}</Name>
+						Hi, I'm <Name>{data.site.siteMetadata.title} 🤵 </Name>
 					</NameHeader>
 					<Description>
 						I'm a Software Engineer at <ImpSpan>poispay.com</ImpSpan>, currently focused on front-end web
@@ -120,7 +120,7 @@ const LandingBio = () => (
 						can be accessed by render() via this.props.
 					</Description>
 					<Description>
-						Checkout my blog posts here.
+						Checkout my blog posts here. 👉
 						<NavLink to="/blog">Blog</NavLink>
 					</Description>
 				</Container>
