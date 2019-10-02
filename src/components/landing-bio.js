@@ -29,7 +29,32 @@ const NameHeader = styled.h1`
 
 const Name = styled.span`color: #cbc3ff;`;
 
-const ImpSpan = styled.span`border-bottom: 2px solid #cbc3ff;`;
+const ImpSpan = styled.a`
+	border-bottom: 2px solid #cbc3ff;
+	text-decoration: none;
+
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #cbc3ff 50%, transparent 50%);
+	-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+	transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+
+	:hover {
+		background-position: top right;
+		color: #fff;
+		border-color: #cbc3ff;
+		background-image: linear-gradient(to top, #cbc3ff 51%, transparent 50%);
+		background-position: 0 100%;
+		-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		cursor: pointer;
+	}
+`;
 
 const Button = styled.button`
 	border: solid #cbc3ff 2px;
@@ -76,13 +101,14 @@ const NavLink = styled(Link)`
     vertical-align: middle;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: inherit;
+    font-family: jost;
     font-weight: bold;
     margin: 0 4px;
 
     
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 40px;
 
     :hover {
         background-color: black;
@@ -111,8 +137,8 @@ const LandingBio = () => (
 						Hi, I'm <Name>{data.site.siteMetadata.title} 🤵 </Name>
 					</NameHeader>
 					<Description>
-						I'm a Software Engineer at <ImpSpan>poispay.com</ImpSpan>, currently focused on front-end web
-						development. I live in Ahmedabad, GJ.
+						I'm a Software Engineer at <ImpSpan href="http://poispay.com/">poispay.com</ImpSpan>, currently
+						focused on front-end web development. I live in Ahmedabad, GJ.
 					</Description>
 					<Description>
 						React components implement a render() method that takes input data and returns what to display.
