@@ -37,7 +37,7 @@ const IMG = styled.img`
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
-const SourceCode = styled.a`
+const Button = styled.button`
 	text-decoration: none;
 	margin-right: 15px;
 	display: inline-block;
@@ -71,15 +71,90 @@ const SourceCode = styled.a`
 	}
 `;
 
+const Input = styled.input`
+	text-decoration: none;
+	margin-right: 15px;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+
+	border: solid black 2px;
+	color: black;
+	fill: black;
+	background: white;
+	box-shadow: 4px 4px 0 black;
+
+	transition: top 0.2s ease;
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+
+	text-transform: uppercase;
+	font-family: inherit;
+	font-weight: bold;
+	margin: 0 4px;
+	margin-bottom: 20px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 55%;
+`;
+
+const Textarea = styled.textarea`
+	text-decoration: none;
+	margin-right: 15px;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+
+	border: solid black 2px;
+	color: black;
+	fill: black;
+	background: white;
+	box-shadow: 4px 4px 0 black;
+
+	transition: top 0.2s ease;
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+
+	text-transform: uppercase;
+	font-family: inherit;
+	font-weight: bold;
+	margin: 0 4px;
+	margin-bottom: 20px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 55%;
+`;
+
+const Label = styled.lebel`font-family: jost;`;
+
 const ContactMe = ({ data }) => {
 	return (
 		<Layout>
 			<SEO title="Blog" />
 			<Content>
 				<NameHeader>
-					Contact <Name>Me</Name> 👇{' '}
+					Contact <Name>Me</Name> 📇{' '}
 				</NameHeader>
 				<Description>Here are some of the projects i have worked on and prowd of.</Description>
+				<form>
+					<Label>Name</Label>
+					<br />
+					<Input name="name" type="text" />
+					<br />
+					<Label>Email</Label>
+					<br />
+					<Input name="email" type="email" />
+					<br />
+					<Label>Message</Label>
+					<br />
+					<Textarea name="message" type="text" />
+					<br />
+					<Button>Submit</Button>
+				</form>
 			</Content>
 		</Layout>
 	);
