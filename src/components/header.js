@@ -162,6 +162,16 @@ const Header = ({ siteTitle }) => (
 				>
 					codepoetry
 				</NavLink>
+				<NavLink
+					to="/contactme"
+					activeStyle={{
+						backgroundColor: 'black',
+						color: '#cbc3ff',
+						boxShadow: '4px 4px 0 #cbc3ff'
+					}}
+				>
+					Contactme
+				</NavLink>
 			</p>
 		</Content>
 	</SiteHeader>
