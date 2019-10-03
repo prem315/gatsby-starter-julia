@@ -97,7 +97,7 @@ const Input = styled.input`
 
 	padding-left: 10px;
 	padding-right: 10px;
-	width: 55%;
+	width: 75%;
 `;
 
 const Textarea = styled.textarea`
@@ -126,7 +126,7 @@ const Textarea = styled.textarea`
 
 	padding-left: 10px;
 	padding-right: 10px;
-	width: 55%;
+	width: 75%;
 `;
 
 const Label = styled.lebel`font-family: jost;`;
