@@ -140,7 +140,7 @@ const ContactMe = ({ data }) => {
 					Contact <Name>Me</Name> 📇{' '}
 				</NameHeader>
 				<Description>Here are some of the projects i have worked on and prowd of.</Description>
-				<form method="post" name="contact" netlify netlify-honeypot="bot-field" data-netlify="true">
+				<form method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
 					<Label>Name</Label>
 					<br />
 					<Input name="name" type="text" />
