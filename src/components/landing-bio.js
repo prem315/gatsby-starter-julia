@@ -141,13 +141,13 @@ const LandingBio = () => (
 						focused on front-end web development. I live in Ahmedabad, GJ.
 					</Description>
 					<Description>
-						I write these uniue snippets of code which translates into poetry, which i call my code poetry.
-						I also like to strike conversation about science and philosophy. When i am not working, i spend
+						I write these uniue snippets of code which translate into poetry, which i call my code poetry. I
+						also like to strike conversation about science and philosophy. When i am not working, i spend
 						time to learn new things, write tech articles, contribute to opensource. On Sunday you find me
 						running in the park.
 					</Description>
 					<Description>
-						Chec kout my blog posts here. 👉
+						Check out my blog posts here. 👉
 						<NavLink to="/blog">Blog</NavLink>
 					</Description>
 				</Container>
