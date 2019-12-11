@@ -4,7 +4,6 @@ import './styles.css';
 
 class ShareButtons extends React.Component {
 	render() {
-		console.log(this.props);
 		return (
 			<div>
 				<FacebookShareButton url={this.props.url} className="soc-buttons">

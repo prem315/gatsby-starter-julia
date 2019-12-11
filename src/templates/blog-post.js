@@ -70,7 +70,6 @@ const MarkdownContent = styled.div`
 
 export default class BlogPostTemplate extends React.Component {
 	render() {
-		console.log(this.props);
 		const post = this.props.data.markdownRemark;
 		const excerpt = this.props.data.markdownRemark.excerpt; //get(data, 'data.excerpt');
 
