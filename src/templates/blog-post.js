@@ -1,10 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
-import get from 'lodash/get';
+// import get from 'lodash/get';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import CustomReactShare from '../components/CustomShareBlock';
+// import CustomReactShare from '../components/CustomShareBlock';
+import ShareButtons from '../components/shareButtons';
 
 const Content = styled.div`
 	margin: 0 auto;
@@ -86,6 +87,7 @@ export default class BlogPostTemplate extends React.Component {
 					<MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
 				</Content>
 				{/* <CustomReactShare title={post.frontmatter.title} excerpt={excerpt} url={url} /> */}
+				<ShareButtons url={url} />
 			</Layout>
 		);
 	}

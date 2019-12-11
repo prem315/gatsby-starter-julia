@@ -1,0 +1,8 @@
+.soc-buttons {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.soc-buttons:hover {
+	cursor: pointer;
+}

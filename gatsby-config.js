@@ -2,7 +2,8 @@ module.exports = {
 	siteMetadata: {
 		title: `Prem Patel`,
 		description: `A minimal blog starter built with Gatsbyjs. The needed Gatsby files are included.`,
-		author: `@niklasmtj`
+		author: `@niklasmtj`,
+		siteUrl: `https://helloprem.netlify.com`
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
