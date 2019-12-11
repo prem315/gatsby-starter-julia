@@ -1,8 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import get from 'lodash/get';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import CustomReactShare from '../components/CustomShareBlock';
 
 const Content = styled.div`
 	margin: 0 auto;
@@ -43,21 +45,51 @@ const MarkdownContent = styled.div`
 	}
 `;
 
-export default ({ data }) => {
-	const post = data.markdownRemark;
-	return (
-		<Layout>
-			<SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
-			<Content>
-				<MarkedHeader>{post.frontmatter.title}</MarkedHeader>
-				<HeaderDate>
-					{post.frontmatter.date} - {post.fields.readingTime.text}
-				</HeaderDate>
-				<MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
-			</Content>
-		</Layout>
-	);
-};
+// export default ({ data }) => {
+// 	const post = data.markdownRemark;
+
+// 	const excerpt = data.markdownRemark.excerpt; //get(data, 'data.excerpt');
+// 	console.log(excerpt);
+// 	const mywebsiteurl = 'https://helloprem.netlify.com';
+// 	const url = `${mywebsiteurl}/${data.markdownRemark.frontmatter.path}`;
+// 	return (
+// 		<Layout>
+// 			<SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+// 			<Content>
+// 				<MarkedHeader>{post.frontmatter.title}</MarkedHeader>
+// 				<HeaderDate>
+// 					{post.frontmatter.date} - {post.fields.readingTime.text}
+// 				</HeaderDate>
+// 				<MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
+// 			</Content>
+// 			<CustomReactShare title={post.frontmatter.title} excerpt={excerpt} url={url} />
+// 		</Layout>
+// 	);
+// };
+
+export default class BlogPostTemplate extends React.Component {
+	render() {
+		console.log(this.props);
+		const post = this.props.data.markdownRemark;
+		const excerpt = this.props.data.markdownRemark.excerpt; //get(data, 'data.excerpt');
+
+		const mywebsiteurl = 'https://helloprem.netlify.com';
+		const url = `${mywebsiteurl}/${this.props.data.markdownRemark.frontmatter.path}`;
+		return (
+			<Layout>
+				<SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+				<Content>
+					<MarkedHeader>{post.frontmatter.title}</MarkedHeader>
+					<HeaderDate>
+						{post.frontmatter.date} - {post.fields.readingTime.text}
+					</HeaderDate>
+					<MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
+				</Content>
+				{/* <CustomReactShare title={post.frontmatter.title} excerpt={excerpt} url={url} /> */}
+			</Layout>
+		);
+	}
+}
 
 export const pageQuery = graphql`
 	query($path: String!) {
