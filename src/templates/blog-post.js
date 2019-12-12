@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import { DiscussionEmbed } from 'disqus-react';
 // import get from 'lodash/get';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -75,6 +76,11 @@ export default class BlogPostTemplate extends React.Component {
 
 		const mywebsiteurl = 'https://helloprem.netlify.com';
 		const url = `${mywebsiteurl}/${this.props.data.markdownRemark.frontmatter.path}`;
+		// console.log(disqusConfig);
+		// const disqusConfig = {
+		// 	shortname: process.env.GATSBY_DISQUS_NAME,
+		// 	config: { identifier: slug, title }
+		// };
 		return (
 			<Layout>
 				<SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
@@ -87,6 +93,7 @@ export default class BlogPostTemplate extends React.Component {
 				</Content>
 				{/* <CustomReactShare title={post.frontmatter.title} excerpt={excerpt} url={url} /> */}
 				<ShareButtons url={url} />
+				{/* <DiscussionEmbed {...disqusConfig} /> */}
 			</Layout>
 		);
 	}
