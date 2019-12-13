@@ -145,7 +145,7 @@ const LandingBio = () => (
 						Prem has worked as a junior AngularJs developer at flikster.com. Prem has a bachelor degree in a
 						Information Technology and has graduated from the codeastra coding bootcamp. Prem also spoke on
 						a several topics on Javascript and ReactJS. Prem also condected workshop on ReactJS in several
-						universities in Ahmedabad, India. Prem writes on Javascripd, ReactJS and tools and technologies
+						universities in Ahmedabad, India. Prem writes on Javascript, ReactJS and tools and technologies
 						around it. Apart from wrting and teaching code, Prem likes to strike conversation on science and
 						philosophy. He also writes unique snippets of code which translate into poetry and he calls it
 						code poetry.
