@@ -137,14 +137,18 @@ const LandingBio = () => (
 						Hi, I'm <Name>{data.site.siteMetadata.title} 🤵 </Name>
 					</NameHeader>
 					<Description>
-						I'm a Software Engineer at <ImpSpan href="http://poispay.com/">poispay.com</ImpSpan>, currently
-						focused on front-end web development. I live in Ahmedabad, GJ.
+						Prem Patel is a core team member at blecan innovation pvt ltd and a senior ReactJs frontend
+						developer at <ImpSpan href="http://poispay.com/">poispay.com.</ImpSpan> And He lives in
+						Ahmedabad, India.
 					</Description>
 					<Description>
-						I write these unique snippets of code which translate into poetry, which i call my code poetry.
-						I also like to strike conversation about science and philosophy. When i am not working, i spend
-						time to learn new things, write tech articles, contribute to opensource. On Sunday you find me
-						running in the park.
+						Prem has worked as a junior AngularJs developer at flikster.com. Prem has a bachelor degree in a
+						Information Technology and has graduated from the codeastra coding bootcamp. Prem also spoke on
+						a several topics on Javascript and ReactJS. Prem also condected workshop on ReactJS in several
+						universities in Ahmedabad, India. Prem writes on Javascripd, ReactJS and tools and technologies
+						around it. Apart from wrting and teaching code, Prem likes to strike conversation on science and
+						philosophy. He also writes unique snippets of code which translate into poetry and he calls it
+						code poetry.
 					</Description>
 					<Description>
 						Check out my blog posts here. 👉
@@ -165,3 +169,28 @@ NameHeader.defaultProps = {
 };
 
 export default LandingBio;
+
+// Prem Patel is a core team member at blecan innovation pvt ltd and a senior ReactJs frontend developer at poispay.com
+// Prem is formaly worked as a junior AngularJs developer at flikster.com.
+// Prem has a bachelor degree in a Information Technology and has graduated from the codeastra coding bootcamp.
+// Prem also spoke on a several topics on Javascript and ReactJS.
+// Prem also condected workshop on ReactJS in several universities in Ahmedabad, India.
+// Prem writes on Javascripd, ReactJS and tools and technologies around it.
+// You can check blog posts here.
+// Apart from wrting and teaching code, Prem likes to strike conversation on science and philosophy.
+// He also writes unique snippets of code which translate into poetry and he calls it code poetry.
+
+// <Description>
+// 						I'm a Software Engineer at <ImpSpan href="http://poispay.com/">poispay.com</ImpSpan>, currently
+// 						focused on front-end web development. I live in Ahmedabad, GJ.
+// 					</Description>
+// 					<Description>
+// 						I write these unique snippets of code which translate into poetry, which i call my code poetry.
+// 						I also like to strike conversation about science and philosophy. When i am not working, i spend
+// 						time to learn new things, write tech articles, contribute to opensource. On Sunday you find me
+// 						running in the park.
+// 					</Description>
+// 					<Description>
+// 						Check out my blog posts here. 👉
+// 						<NavLink to="/blog">Blog</NavLink>
+// 					</Description>
