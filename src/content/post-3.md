@@ -25,7 +25,7 @@ Here when we assign variable b and gives primitive value a(variable), variable b
 We can identify primitive values using typeof operator.
 
 ```js
-console.log(typeof “Prem”) // String
+console.log(typeof "Prem") // String
 console.log(typeof 10) // number
 console.log(typeof true) // boolean
 console.log(typeof undefined) // undefined
@@ -67,20 +67,20 @@ We haven’t added any property to obj2. So why this is happening? Its because o
 The easiest way to identify function reference type is using a typeof.
 ```js
 function fun() {	
-	Return “fun”
+	return "fun"
 } 
 console.log(typeof fun) → Function
 ```
 
 Identifying object
 ```js
-var obj = { name: “Prem” }
+var obj = { name: "Prem" }
 console.log(obj instanceof Object) // true
 ```
 
 Identifying array
 ```js
-var names = [“Prem”, “Divye”, “Jay”]
+var names = ["Prem", "Divye", "Jay"]
 console.log(names instanceof Array) // true
 console.log(names instanceof Object) // true
 ```
