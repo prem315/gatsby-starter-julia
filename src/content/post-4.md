@@ -115,3 +115,11 @@ Below examples are addition operator on primitive with non-primitve(Object) type
 20 + [1, 2, 3] // "201,2,3"
 // You must have figured it out the answer.
 ```
+
+```js
+20 + [""] // "20"
+```
+
+```js
+20 + [" "] // "20 "
+```
