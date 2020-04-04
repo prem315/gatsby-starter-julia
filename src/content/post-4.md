@@ -7,7 +7,7 @@ path: "/blog/javascript-addition-operator"
 
 ## Javascript Addition Operator
 
-You might have encounterd in javascript when you try to add string into number, it concatinates rather throwing error. Why is that?
+You might have encounterd something strange in javascript when you try to add string into number, it concatinates rather throwing error. Why is that?
 
 ```js
 10 + "10" // 1010
