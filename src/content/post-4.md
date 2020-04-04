@@ -18,7 +18,7 @@ Because whenever one operand is string and other operand is number, Js converts 
 Rules
 
 - If at least one operand is Object type(obj, array, date), Js converts into primitive types(string, number or boolean).
-- After conversion, if both operands are primitive types but different primitive type, Js converts into String or number and then either performs concatinates or numeric operation.
+- After conversion, if both operands are primitive types but different primitive types, Js converts into String or number and then either performs concatinations or numeric operation.
   - if one operand is number, js converts other operand into number.
   - if one operand is string, js converts other operand into string.
 - If both operands converted into number, Js performs numeric addition.
