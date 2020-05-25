@@ -89,3 +89,4 @@ innermostdiv is clicked
 ```
 
 This kind of behavior is called event capturing. This is rarely used behavior.
+You can also prevent bubbling and capturing by using event.stopPropagation() method.
